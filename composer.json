@@ -3,7 +3,7 @@
   "description": "Klarna On-site messaging plugin for NEOS",
   "type": "neos-package",
   "require": {
-    "neos/neos": "*"
+    "neos/neos": "^7.0 || ^8.0"
   },
   "autoload": {
     "psr-4": {
