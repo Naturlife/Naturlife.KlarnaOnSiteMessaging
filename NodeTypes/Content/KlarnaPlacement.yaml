@@ -1,0 +1,73 @@
+'Naturlife.KlarnaOnSiteMessaging:Content.KlarnaPlacement':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Klarna Placement'
+    icon: 'klarna'
+    group: 'klarna'
+    inspector:
+      groups:
+        klarnaPlacement:
+          label: 'Klarna Placement'
+          icon: 'klarna'
+  properties:
+    type:
+      type: string
+      ui:
+        label: 'Type'
+        reloadIfChanged: true
+        showInCreationDialog: true
+        inspector:
+          group: 'klarnaPlacement'
+          editor: 'Content/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            placeholder: 'Please select'
+            values:
+              'info-page':
+                label: 'Info page'
+              'top-strip-promotion-badge':
+                label: 'Top strip promotion badge'
+              'top-strip-promotion-auto-size':
+                label: 'Top strip promotion badge (auto size)'
+              'sidebar-promotion-auto-size':
+                label: 'Sidebar promotion (auto size)'
+              'credit-promotion-badge':
+                label: 'Credit promotion badge'
+              'credit-promotion-auto-size':
+                label: 'Credit promotion badge (auto size)'
+              'footer-promotion-auto-size':
+                label: 'Footer promotion (auto size)'
+              'homepage-promotion-box':
+                label: 'Homepage promotion box'
+              'homepage-promotion-wide':
+                label: 'homepage promotion wide'
+              'homepage-promotion-tall':
+                label: 'Homepage promotion tall'
+    theme:
+      type: string
+      ui:
+        label: 'Theme'
+        reloadIfChanged: true
+        inspector:
+          group: 'klarnaPlacement'
+          editor: 'Content/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            placeholder: 'Default'
+            values:
+              'dark':
+                label: 'Dark'
+    locale:
+      type: string
+      ui:
+        label: 'Locale'
+        showInCreationDialog: true
+        reloadIfChanged: true
+        inspector:
+          group: 'klarnaPlacement'
+    amount:
+      type: string
+      ui:
+        label: 'Amount'
+        reloadIfChanged: true
+        inspector:
+          group: 'klarnaPlacement'

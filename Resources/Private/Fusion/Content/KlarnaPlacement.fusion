@@ -1,0 +1,12 @@
+prototype(Naturlife.KlarnaOnSiteMessaging:Content.KlarnaPlacement) < prototype(Neos.Neos:ContentComponent) {
+    attributes = Neos.Fusion:DataStructure {
+        data-key = ${q(node).property('type')}
+        data-locale = ${q(node).property('locale')}
+        data-theme = ${q(node).property('theme')}
+        data-amount = ${q(node).property('amount')}
+    }
+
+    renderer = afx`
+        <klarna-placement {...props.attributes}></klarna-placement>
+    `
+}

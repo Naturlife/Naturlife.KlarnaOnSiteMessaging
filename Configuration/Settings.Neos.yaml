@@ -1,0 +1,11 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        Naturlife.KlarnaOnSiteMessaging: true
+    nodeTypes:
+      groups:
+        klarna:
+          position: 500
+          label: 'Klarna'
+          collapsed: true
