@@ -3,13 +3,13 @@
     'Neos.Neos:Content': true
   ui:
     label: 'Klarna Placement'
-    icon: 'klarna'
+    icon: 'resource://Naturlife.KlarnaOnSiteMessaging/Images/klarna.svg'
     group: 'klarna'
     inspector:
       groups:
         klarnaPlacement:
           label: 'Klarna Placement'
-          icon: 'klarna'
+          icon: 'resource://Naturlife.KlarnaOnSiteMessaging/Images/klarna.svg'
   properties:
     type:
       type: string
