@@ -43,6 +43,22 @@
                 label: 'homepage promotion wide'
               'homepage-promotion-tall':
                 label: 'Homepage promotion tall'
+      validation:
+        'Neos.Neos/Validation/NotEmptyValidator': [ ]
+    locale:
+      type: string
+      ui:
+        label: 'Locale'
+        help:
+          message: 'Locale format: language-COUNTRY'
+        showInCreationDialog: true
+        reloadIfChanged: true
+        inspector:
+          group: 'klarnaPlacement'
+      validation:
+        'Neos.Neos/Validation/NotEmptyValidator': [ ]
+        'Neos.Neos/Validation/RegularExpressionValidator':
+          regularExpression: '/[a-z]{2}-[A-Z]{2}/'
     theme:
       type: string
       ui:
@@ -56,18 +72,14 @@
             values:
               'dark':
                 label: 'Dark'
-    locale:
-      type: string
+    purchaseAmount:
+      type: integer
       ui:
-        label: 'Locale'
-        showInCreationDialog: true
+        label: 'Purchase amount'
+        help:
+          message: 'Please state in cents'
         reloadIfChanged: true
         inspector:
           group: 'klarnaPlacement'
-    amount:
-      type: string
-      ui:
-        label: 'Amount'
-        reloadIfChanged: true
-        inspector:
-          group: 'klarnaPlacement'
+      validation:
+        'Neos.Neos/Validation/IntegerValidator': [ ]
