@@ -2,6 +2,7 @@
   "name": "naturlife/klarna-onsite-messaging",
   "description": "Klarna On-site messaging plugin for NEOS",
   "type": "neos-package",
+  "license": "MIT",
   "require": {
     "neos/neos": "^7.0 || ^8.0"
   },
