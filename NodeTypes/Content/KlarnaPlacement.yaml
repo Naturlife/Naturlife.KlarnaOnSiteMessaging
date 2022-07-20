@@ -1,8 +1,9 @@
 'Naturlife.KlarnaOnSiteMessaging:Content.KlarnaPlacement':
+  label: "${q(node).property('type')}"
   superTypes:
     'Neos.Neos:Content': true
   ui:
-    label: 'Klarna Placement'
+    label: 'Klarna placement'
     icon: 'resource://Naturlife.KlarnaOnSiteMessaging/Images/klarna.svg'
     group: 'klarna'
     inspector:
