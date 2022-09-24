@@ -62,6 +62,7 @@
           regularExpression: '/[a-z]{2}-[A-Z]{2}/'
     theme:
       type: string
+      defaultValue: 'default'
       ui:
         label: 'Theme'
         reloadIfChanged: true
@@ -71,6 +72,8 @@
           editorOptions:
             placeholder: 'Default'
             values:
+              'default':
+                label: 'Default'
               'dark':
                 label: 'Dark'
     purchaseAmount:

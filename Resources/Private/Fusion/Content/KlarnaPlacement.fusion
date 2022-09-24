@@ -3,7 +3,9 @@ prototype(Naturlife.KlarnaOnSiteMessaging:Content.KlarnaPlacement) < prototype(N
         data-key = ${q(node).property('type')}
         data-locale = ${q(node).property('locale')}
         data-theme = ${q(node).property('theme')}
+        data-theme.@if.has = ${q(node).property('theme') != 'default'}
         data-purchase-amount = ${q(node).property('purchaseAmount')}
+        data-purchase-amount.@if.has = ${q(node).property('purchaseAmount')}
     }
 
     renderer = afx`
